@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    position: relative;
+    height: 100vh;
+    background: rgb(47, 46, 46);
+    background: radial-gradient(circle, rgba(47, 46, 46, 1) 0%, rgba(22, 21, 21, 1) 100%);
+}
+
+.wrapper .redes {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+    bottom: 3em;
+}
+
+.redes i {
+    cursor: pointer;
+    font-size: 2em;
+    padding: 0.5em;
+    color: #55ffe2;
+    z-index: 2;
+}
+
+.cont-bg {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cont-bg svg {
+    height: 55%;
+    animation: colors 30s infinite;
+    -webkit-animation: colors 30s infinite;
+}
+
+a {
+    text-decoration: none;
+}
+
+.redes a {
+    width: 65px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.redes a span {
+    position: absolute;
+    background-color: #55ffe2;
+    height: 0%;
+    width: 0%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all ease-in-out .3s;
+    -webkit-transition: all ease-in-out .3s;
+    -moz-transition: all ease-in-out .3s;
+    -ms-transition: all ease-in-out .3s;
+    -o-transition: all ease-in-out .3s;
+    z-index: 1;
+}
+
+.redes a:hover span {
+    height: 100%;
+    width: 100%;
+}
+
+.redes a:hover i {
+    color: #434343;
+}
+
+@keyframes colors {
+
+    0%,
+    100% {
+        fill: #fa448c;
+    }
+
+    20% {
+        fill: #fec859;
+    }
+
+    50% {
+        fill: #43b5a0;
+    }
+
+    80% {
+        fill: #13a8fe;
+    }
+}
